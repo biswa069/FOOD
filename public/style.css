@@ -1,0 +1,236 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /*agr koi clients pr click krega navbar m to wo niche our clients pr direct ho jaega*/
+}
+body{
+    background-color:black;
+}
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+
+
+
+    
+}
+/* navigation bar logo and image  */
+#logo{
+  margin: 20px 20px;
+}
+#logo img{
+    margin: -15px 40px;
+     height: 42px; /*  from this you can set height of image */
+    
+}
+/* navigation bar list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 24px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+/* home  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("/fh/pic2.jpg")no-repeat center center/cover;  /*kyuki hum css folder m the aur hume img folder m jana tha so ../img lagaya*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* sevices */
+#services{
+    margin: 0px;
+    display: flex;
+
+}
+#services .box{
+    border: 4px solid red;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px ;
+    background-color:#e37e7e;
+
+}
+#services .box p{
+    font-size: 20px;
+    font-family: cursive;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+/* client */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#client-section{
+    height: 500px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/fh/bg.jpg)no-repeat center center /cover;
+    width: 100%;
+    height: 70%;
+    z-index: -2;
+    opacity: 0.8;
+}
+#clients img{
+    height: 140px;
+}
+.client-item{
+    padding: 40px;
+}
+/* contact details */
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    background: url("/fh/bg2.jpg")no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#contact-box form{
+    width:40%;
+    z-index: -2;
+    
+}
+#contact-box label{
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px ;
+    font-size: 1.2rem;
+    background-color: #eda2a2;
+}
+footer{
+    padding: 40px 10px;
+    font-size: 20px;
+}
+
+/* utility classes can also be used to tARget h1 */
+.h-primary{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    padding: 15px;
+    
+}
+.hprimary{
+    color: white;
+    margin-top: 70px;
+    padding: 12px;
+    font-size: 2.5rem;
+    z-index: -2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hsecondary{
+    font-family:Arial, Helvetica, sans-serif  ;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 5px 15px;
+    border: 2px solid white;
+    background-color:#eda2a2;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 55px;
+    cursor: pointer;
+}
+.btn:hover{
+    text-decoration: underline;
+
+}
+.color{
+    color: white;
+}

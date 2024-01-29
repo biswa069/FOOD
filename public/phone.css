@@ -1,0 +1,57 @@
+
+/* to make our webpage responsive we have to do these changes */
+
+/* navigtion section*/
+#navbar{
+    flex-direction: column;  /*now navbar will fold and content will not get cut if screen becomes small*/
+}
+
+/* home section  */
+#home{
+    height: 370px;
+    padding: 5px 28px;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 10px;
+    padding-bottom: 8px;
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 14px;
+}
+
+/* services section  */
+#services{
+    flex-direction: column;
+}
+#services .box img{
+    height: 120px;
+}
+#services .box{
+    padding: 15px;
+    margin: 5px 80px;
+    margin-bottom:  20px; 
+}
+/* clients section  */
+#clients{
+    flex-wrap: wrap;  /*jb screen choti hogi bg img shrink hogi*/
+}
+#clients img{
+    width: 100px;
+    height: 100px;
+    padding: 20px; /*jb screen choti hogi bg img shrink hogi*/
+}
+/* contact us section  */
+/* footer */
+/* utility */
+.h-primary{
+    font-size:2rem;
+}
+.btn{
+    font-size: 13px;
+    padding: 5px 5px;
+
+}
